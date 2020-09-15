@@ -15,6 +15,8 @@
 		8861CDEC251080FF003486A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8861CDEA251080FF003486A9 /* LaunchScreen.storyboard */; };
 		8861CDF7251080FF003486A9 /* DiceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CDF6251080FF003486A9 /* DiceCalculatorTests.swift */; };
 		8861CE02251080FF003486A9 /* DiceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CE01251080FF003486A9 /* DiceCalculatorUITests.swift */; };
+		8861CE1025108945003486A9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8861CE0F25108945003486A9 /* Colors.xcassets */; };
+		8861CE1425108D9D003486A9 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CE1325108D9D003486A9 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8861CDFD251080FF003486A9 /* DiceCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861CE01251080FF003486A9 /* DiceCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceCalculatorUITests.swift; sourceTree = "<group>"; };
 		8861CE03251080FF003486A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8861CE0F25108945003486A9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8861CE1325108D9D003486A9 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				8861CDDF251080FD003486A9 /* AppDelegate.swift */,
+				8861CE1325108D9D003486A9 /* ColorExtension.swift */,
 				8861CDE1251080FD003486A9 /* SceneDelegate.swift */,
 				8861CDE3251080FD003486A9 /* ContentView.swift */,
+				8861CE0F25108945003486A9 /* Colors.xcassets */,
 				8861CDE5251080FF003486A9 /* Assets.xcassets */,
 				8861CDEA251080FF003486A9 /* LaunchScreen.storyboard */,
 				8861CDED251080FF003486A9 /* Info.plist */,
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8861CDEC251080FF003486A9 /* LaunchScreen.storyboard in Resources */,
+				8861CE1025108945003486A9 /* Colors.xcassets in Resources */,
 				8861CDE9251080FF003486A9 /* Preview Assets.xcassets in Resources */,
 				8861CDE6251080FF003486A9 /* Assets.xcassets in Resources */,
 			);
@@ -270,6 +277,7 @@
 				8861CDE0251080FD003486A9 /* AppDelegate.swift in Sources */,
 				8861CDE2251080FD003486A9 /* SceneDelegate.swift in Sources */,
 				8861CDE4251080FD003486A9 /* ContentView.swift in Sources */,
+				8861CE1425108D9D003486A9 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
