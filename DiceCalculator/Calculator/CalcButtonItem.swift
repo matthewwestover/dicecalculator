@@ -43,8 +43,7 @@ extension CalcButtonItem {
 			return op.rawValue
 		case .command(let command):
 			return command.rawValue
-		case .dice(let dice):
-			return dice.rawValue
+		default: return ""
 		}
 	}
 	
@@ -54,16 +53,43 @@ extension CalcButtonItem {
 			return Image("DiceRoll")
 		case .command(.delete):
 			return Image(systemName: "delete.left.fill")
+		case .dice(.d4):
+			return Image("D4")
+		case .dice(.d6):
+			return Image("D6")
+		case .dice(.d8):
+			return Image("D8")
+		case .dice(.d10):
+			return Image("D10")
+		case .dice(.d12):
+			return Image("D12")
+		case .dice(.d20):
+			return Image("D20")
+		case .dice(.dPer):
+			return Image("DPer")
+		case .dice(.dx):
+			return Image("Dice")
 		default: return Image("")
 		}
 	}
 	
 	var size: CGSize {
-		if case .digit(let value) = self, value == 0 {
-			return CGSize(width: 88 * 2 + 8, height: 88)
-		}
 		return CGSize(width: 88, height: 88)
 	}
+	
+	var bgColor: Color {
+		switch self {
+		case .digit:
+			return Color.rogue
+		case .op:
+			return Color.wizard
+		case .command:
+			return Color.sorcerer
+		case .dice:
+			return Color.warlock
+		}
+	}
+	
 }
 
 extension CalcButtonItem: Hashable {}

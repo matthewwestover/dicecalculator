@@ -12,4 +12,5 @@ extension Color {
 	static let sorcerer = Color("Sorcerer")
 	static let warlock = Color("Warlock")
 	static let wizard = Color("Wizard")
+	static let whiteop = Color("15WhiteOp")
 }
