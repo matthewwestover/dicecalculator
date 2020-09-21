@@ -21,6 +21,7 @@ struct CalcInputView: View {
 					.padding(.trailing)
 					.padding(.top, 5)
 					.padding(.bottom, 5)
+					.frame(height: 35)
 			}
 			.background(Color.whiteop)
 			VStack{
