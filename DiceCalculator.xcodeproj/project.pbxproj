@@ -25,6 +25,7 @@
 		8861CE02251080FF003486A9 /* DiceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CE01251080FF003486A9 /* DiceCalculatorUITests.swift */; };
 		8861CE1025108945003486A9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8861CE0F25108945003486A9 /* Colors.xcassets */; };
 		8861CE1425108D9D003486A9 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CE1325108D9D003486A9 /* ColorExtension.swift */; };
+		88B57B0325187919005E8C5B /* CalcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B57B0225187919005E8C5B /* CalcModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		8861CE03251080FF003486A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8861CE0F25108945003486A9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8861CE1325108D9D003486A9 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		88B57B0225187919005E8C5B /* CalcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				8822AE8F2517FACA00DF0C55 /* CalcResultView.swift */,
 				8822AE9D251803F900DF0C55 /* CalcInputView.swift */,
 				8822AEA225181C8C00DF0C55 /* CalcPadView.swift */,
+				88B57B0225187919005E8C5B /* CalcModel.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				8822AE9E251803F900DF0C55 /* CalcInputView.swift in Sources */,
 				8842E03E2511BE5500EC5D55 /* CalculatorView.swift in Sources */,
 				8861CDE2251080FD003486A9 /* SceneDelegate.swift in Sources */,
+				88B57B0325187919005E8C5B /* CalcModel.swift in Sources */,
 				8822AE902517FACA00DF0C55 /* CalcResultView.swift in Sources */,
 				8861CDE4251080FD003486A9 /* ContentView.swift in Sources */,
 				8842E03925115B9300EC5D55 /* ContentView2.swift in Sources */,

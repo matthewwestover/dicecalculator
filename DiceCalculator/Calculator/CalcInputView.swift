@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct CalcInputView: View {
-	let inpExpr: String
+	@EnvironmentObject var model: CalcModel
 	
     var body: some View {
 		VStack (spacing: 0){
 			HStack{
 				Spacer()
-				Text(inpExpr)
+				Text(model.inputExpr)
 					.font(Font.custom("Scaly Sans", size: 30))
 					.foregroundColor(.white)
 					.padding(.trailing)
@@ -24,7 +24,7 @@ struct CalcInputView: View {
 			}
 			.background(Color.whiteop)
 			VStack{
-				Color.wizard.frame(height:CGFloat(5))
+				Color.calcDOrange.frame(height:CGFloat(5))
 			}
 		}
     }
@@ -32,6 +32,6 @@ struct CalcInputView: View {
 
 struct CalcInputView_Previews: PreviewProvider {
     static var previews: some View {
-		CalcInputView(inpExpr: "5 + 1d20").background(Color.black)
+		CalcInputView().background(Color.black).environmentObject(CalcModel())
     }
 }
