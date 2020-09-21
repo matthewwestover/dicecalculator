@@ -11,11 +11,10 @@
 		8822AE862517EFD900DF0C55 /* Scaly Sans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8822AE842517EFD900DF0C55 /* Scaly Sans.otf */; };
 		8822AE8B2517F97200DF0C55 /* Bookinsanity.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8822AE8A2517F97200DF0C55 /* Bookinsanity.otf */; };
 		8822AE902517FACA00DF0C55 /* CalcResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822AE8F2517FACA00DF0C55 /* CalcResultView.swift */; };
-		8822AE952518006800DF0C55 /* Bookinsanity Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8822AE942518006800DF0C55 /* Bookinsanity Italic.otf */; };
 		8822AE9E251803F900DF0C55 /* CalcInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822AE9D251803F900DF0C55 /* CalcInputView.swift */; };
+		8822AEA325181C8C00DF0C55 /* CalcPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822AEA225181C8C00DF0C55 /* CalcPadView.swift */; };
 		8842E03925115B9300EC5D55 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E03825115B9300EC5D55 /* ContentView2.swift */; };
 		8842E03E2511BE5500EC5D55 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E03D2511BE5500EC5D55 /* CalculatorView.swift */; };
-		8842E0402511C66A00EC5D55 /* CalcButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842E03F2511C66A00EC5D55 /* CalcButtonItem.swift */; };
 		8861CDE0251080FD003486A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CDDF251080FD003486A9 /* AppDelegate.swift */; };
 		8861CDE2251080FD003486A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CDE1251080FD003486A9 /* SceneDelegate.swift */; };
 		8861CDE4251080FD003486A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861CDE3251080FD003486A9 /* ContentView.swift */; };
@@ -50,11 +49,10 @@
 		8822AE842517EFD900DF0C55 /* Scaly Sans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scaly Sans.otf"; sourceTree = "<group>"; };
 		8822AE8A2517F97200DF0C55 /* Bookinsanity.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bookinsanity.otf; sourceTree = "<group>"; };
 		8822AE8F2517FACA00DF0C55 /* CalcResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcResultView.swift; sourceTree = "<group>"; };
-		8822AE942518006800DF0C55 /* Bookinsanity Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bookinsanity Italic.otf"; sourceTree = "<group>"; };
 		8822AE9D251803F900DF0C55 /* CalcInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcInputView.swift; sourceTree = "<group>"; };
+		8822AEA225181C8C00DF0C55 /* CalcPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcPadView.swift; sourceTree = "<group>"; };
 		8842E03825115B9300EC5D55 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		8842E03D2511BE5500EC5D55 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
-		8842E03F2511C66A00EC5D55 /* CalcButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButtonItem.swift; sourceTree = "<group>"; };
 		8861CDDC251080FC003486A9 /* DiceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861CDDF251080FD003486A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8861CDE1251080FD003486A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				8842E03D2511BE5500EC5D55 /* CalculatorView.swift */,
-				8842E03F2511C66A00EC5D55 /* CalcButtonItem.swift */,
 				8822AE8F2517FACA00DF0C55 /* CalcResultView.swift */,
 				8822AE9D251803F900DF0C55 /* CalcInputView.swift */,
+				8822AEA225181C8C00DF0C55 /* CalcPadView.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				8822AE8A2517F97200DF0C55 /* Bookinsanity.otf */,
-				8822AE942518006800DF0C55 /* Bookinsanity Italic.otf */,
 				8822AE842517EFD900DF0C55 /* Scaly Sans.otf */,
 				8822AE832517EFD900DF0C55 /* Scaly Sans Bold.otf */,
 			);
@@ -295,7 +292,6 @@
 				8861CE1025108945003486A9 /* Colors.xcassets in Resources */,
 				8822AE852517EFD900DF0C55 /* Scaly Sans Bold.otf in Resources */,
 				8861CDE9251080FF003486A9 /* Preview Assets.xcassets in Resources */,
-				8822AE952518006800DF0C55 /* Bookinsanity Italic.otf in Resources */,
 				8861CDE6251080FF003486A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8861CDE0251080FD003486A9 /* AppDelegate.swift in Sources */,
-				8842E0402511C66A00EC5D55 /* CalcButtonItem.swift in Sources */,
 				8822AE9E251803F900DF0C55 /* CalcInputView.swift in Sources */,
 				8842E03E2511BE5500EC5D55 /* CalculatorView.swift in Sources */,
 				8861CDE2251080FD003486A9 /* SceneDelegate.swift in Sources */,
@@ -330,6 +325,7 @@
 				8861CDE4251080FD003486A9 /* ContentView.swift in Sources */,
 				8842E03925115B9300EC5D55 /* ContentView2.swift in Sources */,
 				8861CE1425108D9D003486A9 /* ColorExtension.swift in Sources */,
+				8822AEA325181C8C00DF0C55 /* CalcPadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

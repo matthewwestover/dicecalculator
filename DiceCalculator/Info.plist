@@ -7,7 +7,6 @@
 		<string>Scaly Sans.otf</string>
 		<string>Scaly Sans Bold.otf</string>
 		<string>Bookinsanity.otf</string>
-		<string>Bookinsanity Italic.otf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

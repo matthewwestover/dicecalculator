@@ -13,4 +13,8 @@ extension Color {
 	static let warlock = Color("Warlock")
 	static let wizard = Color("Wizard")
 	static let whiteop = Color("15WhiteOp")
+	static let calcLight = Color("CalcLightGray")
+	static let calcDark = Color("CalcDarkGray")
+	static let calcOrange = Color("CalcOrange")
+	static let calcDOrange = Color("CalcDarkOrange")
 }
