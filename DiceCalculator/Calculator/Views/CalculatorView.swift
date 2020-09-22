@@ -9,10 +9,10 @@ struct CalculatorView: View {
 			Color.black.edgesIgnoringSafeArea(.all)
 			VStack (spacing: 0){
 				// Result of calculation
-				CalcResultView()
+				CalcResultView().environmentObject(self.model)
 				// Input
-				CalcInputView()
-				CalcPadView()
+				CalcInputView().environmentObject(self.model)
+				CalcPadView().environmentObject(self.model)
 			}
 		}
     }
