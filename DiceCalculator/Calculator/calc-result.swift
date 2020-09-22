@@ -1,9 +1,13 @@
-//
-//  calc-result.swift
-//  DiceCalculator
-//
-//  Created by Matt Westover on 9/21/20.
-//  Copyright © 2020 Matt Westover. All rights reserved.
-//
+enum CalcResult<Value: Equatable>: Equatable {
 
-import Foundation
+	case value(Value)
+	case error(CalcError)
+
+	func then<NextValue>(_ produceNextResult: (Value) -> CalcResult<NextValue>) -> CalcResult<NextValue> {
+		switch self {
+		case .value(let value): return produceNextResult(value)
+		case .error(let error): return .error(error)
+		}
+	}
+	
+}

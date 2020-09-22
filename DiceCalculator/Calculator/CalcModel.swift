@@ -92,10 +92,22 @@ class CalcModel: ObservableObject {
 			.then(Expressionizer.createExpression(fromOperations:))
 			.then(Calculator.evaluate(expression:))
 		switch rolled {
-		case .value(let number): self.finalValue = number.description
+		case .value(let number):
+			self.finalValue = number.description
+			self.halfValue = String(Int(number.description)! / 2)
 		case .error(let error): print(error.message)
 		}
-		
+		self.inputClean += " ="
+		let max = InputParser.createGlyphs(from: self.maxExpr)
+			.then(Tokenizer.createTokens(fromGlyphs:))
+			.then(Operationizer.createOperations(fromTokens:))
+			.then(Expressionizer.createExpression(fromOperations:))
+			.then(Calculator.evaluate(expression:))
+		switch max {
+		case .value(let number):
+			self.maxValue = number.description
+		case .error(let error): print(error.message)
+		}
 	}
 	
 	func getDice(){
