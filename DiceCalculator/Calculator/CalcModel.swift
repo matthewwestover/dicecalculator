@@ -115,7 +115,14 @@ class CalcModel: ObservableObject {
 		for (index, item) in self.cleanArr.enumerated() {
 			let isDice = item.contains("d")
 			if(isDice == true){
-				self.cleanArr[index] = self.rollDice(value: item)
+				var dice = ""
+				dice += item
+				if(item.last! == "d"){
+					dice += cleanArr[index+1]
+					cleanArr.remove(at: index+1)
+				}
+				self.cleanArr[index] = self.rollDice(value: dice)
+				print(dice)
 			}
 		}
 		self.inputClean = self.flattenTheExpression(exps: cleanArr)
@@ -123,7 +130,13 @@ class CalcModel: ObservableObject {
 		for (index, item) in self.maxArr.enumerated() {
 			let isDice = item.contains("d")
 			if(isDice == true){
-				self.maxArr[index] = self.maxDice(value: item)
+				var dice = ""
+				dice += item
+				if(item.last! == "d"){
+					dice += maxArr[index+1]
+					maxArr.remove(at: index+1)
+				}
+				self.maxArr[index] = self.maxDice(value: dice)
 			}
 		}
 		self.maxExpr = self.flattenTheExpression(exps: maxArr)
