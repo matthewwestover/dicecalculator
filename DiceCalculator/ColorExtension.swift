@@ -16,5 +16,5 @@ extension Color {
 	static let calcLight = Color("CalcLightGray")
 	static let calcDark = Color("CalcDarkGray")
 	static let calcOrange = Color("CalcOrange")
-	static let calcDOrange = Color("CalcDarkOrange")
+	static let calcBlue = Color("CalcDarkBlue")
 }

@@ -378,7 +378,7 @@ struct CalcPadView: View {
 							.frame(width: 50, height: 50)
 					}
 					.frame(width: geometry.size.width / 4, height: (geometry.size.height / 7) * 2)
-					.background(Color.calcDOrange)
+					.background(Color.calcBlue)
 					}
 					
 				}

@@ -25,7 +25,7 @@ struct CalcInputView: View {
 			}
 			.background(Color.whiteop)
 			VStack{
-				Color.calcDOrange.frame(height:CGFloat(5))
+				Color.calcOrange.frame(height:CGFloat(5))
 			}
 		}
     }
