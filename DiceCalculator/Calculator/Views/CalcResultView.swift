@@ -9,10 +9,8 @@
 import SwiftUI
 
 struct CalcResultView: View {
-	let final: String
-	let maxVal: String
-	let halfVal: String
-	let incoming: String
+	@EnvironmentObject var model: CalcModel
+	
 	@State var disp:Bool = false
 	
 	
@@ -44,7 +42,7 @@ struct CalcResultView: View {
 							Text("Max")
 								.font(Font.custom("Bookinsanity", size: 15))
 								.foregroundColor(Color.gray)
-							Text(maxVal)
+							Text(model.maxValue)
 								.font(Font.custom("Scaly Sans", size: 25))
 								.foregroundColor(Color.gray)
 						}
@@ -53,7 +51,7 @@ struct CalcResultView: View {
 							Text("Half")
 								.font(Font.custom("Bookinsanity", size: 15))
 								.foregroundColor(Color.gray)
-							Text(halfVal)
+							Text(model.halfValue)
 								.font(Font.custom("Scaly Sans", size: 25))
 								.foregroundColor(Color.gray)
 						}
@@ -66,24 +64,26 @@ struct CalcResultView: View {
 				}
 				Spacer()
 				if(disp == false){
-					Text(incoming + " =")
+					Text(model.inputClean)
 						.font(Font.custom("Scaly Sans", size: 20))
 						.foregroundColor(Color.gray)
 				}
 				
-				Text(final)
+				Text(model.finalValue)
 					.font(Font.custom("Scaly Sans Bold", size: 60))
 					.foregroundColor(Color.white)
 			}
+			.frame(height: 60)
 			.padding(.trailing)
 			.padding(.top)
 			.background(Color.black)
+			
 		}
 	}
 }
 
 struct CalcResultView_Previews: PreviewProvider {
 	static var previews: some View {
-		CalcResultView(final: "18", maxVal: "888", halfVal: "888", incoming: "5 + (15)")
+		CalcResultView().environmentObject(CalcModel())
 	}
 }

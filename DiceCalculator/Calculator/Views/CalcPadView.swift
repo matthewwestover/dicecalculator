@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CalcPadView: View {
 	@EnvironmentObject var model: CalcModel
+	
 	var body: some View {
 		GeometryReader { geometry in
 			HStack (spacing: 0){
@@ -370,7 +371,7 @@ struct CalcPadView: View {
 					
 					// Calculate Button
 					Button(action: {
-						print("hi")
+						model.calculate()
 					}){ HStack {
 						Image("DiceRoll").resizable()
 							.foregroundColor(Color.white)
